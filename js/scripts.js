@@ -22,6 +22,8 @@ $(document).ready(function() {
           numberArray[i] = "ping-pong";
         } else if (numberArray[i] % 5 === 0) {
           numberArray[i] = "pong";
+        } else if (numberArray[i] % 3 === 0) {
+          numberArray[i] = "ping";
         }
       }
       return numberArray;
