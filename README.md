@@ -16,15 +16,17 @@ _For any numerical user input up to 5,000, this application will return a list o
 * _When a number is not a multiple of 3, 5, or 15 the number shall be returned unaltered_
   * _Input Example: 7_
   * _Output Example: 7_
-* _When a number is a multiple of 3, that number shall be replaced with the word "ping"_
-  * _Input Example: 6_
-  * _Output Example: "ping"_
-* _When a number is a multiple of 5, that number shall be replaced with the word "pong"_
-    * _Input Example: 10_
-    * _Output Example: "pong"_
 * _When a number is a multiple of 15, that number shall be replaced with the word "ping-pong"_
   * _Input Example: 45_
   * _Output Example: "ping-pong"_
+* _When a number is a multiple of 5, that number shall be replaced with the word "pong"_
+    * _Input Example: 10_
+    * _Output Example: "pong"_
+* _When a number is a multiple of 3, that number shall be replaced with the word "ping"_
+  * _Input Example: 6_
+  * _Output Example: "ping"_
+
+
 
 ## Known Bugs
 
