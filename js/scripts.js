@@ -1,11 +1,19 @@
 $(document).ready(function() {
+
+//Front-end
+//Clear button handling and generic function to remove all list items
+  $("#clear").click(function () {
+      $("li").remove();
+  });
+
+  //Submit button handling and invocation of function to populate list
   $("#pingpongform").submit(function(event) {
-
     event.preventDefault();
-
     var numberInput = $("#numberinput").val();
     var numberArray = [];
+    appendItems(translateMultiples,numberArray);
 
+//Back-end
 //Returns an array of numbers up to the user's input number
     function getArray(numberInput) {
       for (i=0 ; i<numberInput ; i++) {
@@ -13,8 +21,8 @@ $(document).ready(function() {
       }
       return numberArray;
     }
-
-    function translateMultiples(getArray,numberArray) {
+//translates numbers divisible by 3, 5, and 15, into words
+    function translateMultiples(getArray,numberInput,numberArray) {
       var numberArray = getArray(numberInput);
 
       for (i=0 ; i<numberArray.length ; i++) {
@@ -29,7 +37,13 @@ $(document).ready(function() {
       return numberArray;
     }
 
+//definition of function to populate list
+    function appendItems(translateMultiples,numberArray) {
+      var numberArray = translateMultiples(getArray,numberInput,numberArray);
 
-    alert(translateMultiples(getArray,numberArray));
+      for (i=0 ; i<numberArray.length ; i++) {
+        $("#result").append("<li>" + numberArray[i] + "</li>")
+      }
+    }
   });
 });
