@@ -8,6 +8,10 @@
 
 _For any numerical user input up to 5,000, this application will return a list of all the numbers up to the input number, replacing all multiples of 3, 5, and 15 with the words "ping", "pong", and "ping-pong", respectively._
 
+## Link
+
+[Ping-Pong Player](http://wedaft.github.io/pingpong)
+
 ## Specs ##
 
 * _Return a list of numbers up to a given number_
