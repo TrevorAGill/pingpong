@@ -1,0 +1,19 @@
+.container {
+  background: url("../img/background.jpg") repeat;
+  padding-left: 370px;
+  padding-right: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.well.results {
+  display: none;
+}
+
+ul {
+  list-style: circle;
+}
+
+body {
+  background-color: lightgray;
+}

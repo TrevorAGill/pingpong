@@ -11,16 +11,22 @@
     <div class="container">
       <div class="well">
         <h1>Let's Play Ping-Pong</h1>
+        <ul>
+          <li>Enter a number up to 5000</li>
+          <li>Numbers divisible by 3 will become "ping"</li>
+          <li>Numbers divisible by 5 will become "pong"</li>
+          <li>Numbers divisible by 15 will become "ping-pong"</li>
+        </ul>
         <form id="pingpongform">
           <div class="form-group">
             <label for="numberinput">Enter a Number</label>
             <input id="numberinput" class="form-control" type="number" max="5000">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
-          <button id="clear" type="reset">Clear the location list</button>
+          <button id="clear" class="btn btn-warning" type="reset">Clear</button>
         </form>
       </div>
-      <div class="well">
+      <div class="well results">
         <ul>
           <span id="result"></span>
         </ul>
