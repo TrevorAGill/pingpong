@@ -10,18 +10,21 @@ _For any numerical user input up to 5,000, this application will return a list o
 
 ## Specs ##
 
+* _Return a list of numbers up to a given number_
+  * _Input Example: 7_
+  * _Output Example: 1, 2, 3, 4, 5, 6, 7_
 * _When a number is not a multiple of 3, 5, or 15 the number shall be returned unaltered_
-  * _Input Example: 22_
-  * _Output Example: 22_
+  * _Input Example: 7_
+  * _Output Example: 7_
 * _When a number is a multiple of 3, that number shall be replaced with the word "ping"_
-  * _Input Example: c_
-  * _Output Example: "Please enter a valid English word"_
+  * _Input Example: 6_
+  * _Output Example: "ping"_
 * _When a number is a multiple of 5, that number shall be replaced with the word "pong"_
-    * _Input Example: C_
-    * _Output Example: "Please enter a valid English word"_
+    * _Input Example: 10_
+    * _Output Example: "pong"_
 * _When a number is a multiple of 15, that number shall be replaced with the word "ping-pong"_
-  * _Input Example: a_
-  * _Output Example: away_
+  * _Input Example: 45_
+  * _Output Example: "ping-pong"_
 
 ## Known Bugs
 
