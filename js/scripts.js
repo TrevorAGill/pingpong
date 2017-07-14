@@ -20,6 +20,8 @@ $(document).ready(function() {
       for (i=0 ; i<numberArray.length ; i++) {
         if (numberArray[i] % 15 === 0) {
           numberArray[i] = "ping-pong";
+        } else if (numberArray[i] % 5 === 0) {
+          numberArray[i] = "pong";
         }
       }
       return numberArray;
