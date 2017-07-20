@@ -1,5 +1,5 @@
 .container {
-  background: url("../img/background.jpg") repeat;
+  background: url("../img/background.jpg");
   padding-left: 370px;
   padding-right: 370px;
   padding-top: 20px;
@@ -8,6 +8,8 @@
 
 .well.results {
   display: none;
+  overflow-y:scroll;
+  height: 500px;
 }
 
 ul {
